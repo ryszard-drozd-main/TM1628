@@ -64,8 +64,10 @@ class TM1628 : public Print
     byte _clk_pin;
     byte _stb_pin;
 	byte _curpos;
-//	byte buffer[];
-//	byte seg_addr[];
+	byte buffer[14];
+	byte seg_addr[7];
+	byte led_addr[19];
+	byte led_val[19];
 };
 
 #endif
